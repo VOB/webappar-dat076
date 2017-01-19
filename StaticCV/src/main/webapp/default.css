@@ -1,3 +1,33 @@
 div {
-    background: #09cdda;
+    background: #fa0000;
+    
+}
+
+li {
+    text-align: center;
+    font-family: cursive;
+    color: #09cdda;
+}
+
+body {
+    background: aqua;
+}
+
+img {
+    width: 100%;
+}
+
+.letter {
+    font-family: 'Pacifico', cursive;
+}
+
+#image {
+    background-color: blue;
+}
+
+@media screen and (max-width: 600px) {
+    #image {
+        border-radius: 10px;
+        width: 400px;
+    }
 }
