@@ -11,11 +11,13 @@
 
 <body>
     <h1>Create a table using JavaScript</h1>
-    <p>This page should display a table created using pure JS/DOM API!!</p>
+    <p id="test">This page should display a table created using pure JS/DOM API!!</p>
 
     <!-- This is where the table should hook to the DOM -->
     <div id="parent"></div>
-
+    <script>
+      document.getElementById("test").innerHTML = "HEJ";
+    </script>
     <!-- This is pure js, put scripts last so that DOM is constructed -->
     <script type="text/javascript" src="table.js"></script>
 </body>

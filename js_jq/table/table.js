@@ -22,8 +22,8 @@ function createTable(rows, cols, data) {
   return tbl;
 }
 
-$( document ).ready(function() {
-  document.getElementById("test").innerHTML = "HEJ"
+$(document).ready(function() {
+  document.getElementById("test").innerHTML = "HAI"
   //test.innerHTML = "This page should display a table created using pure JS/DOM API";
 
   // Executed at download
