@@ -24,7 +24,17 @@ var control = (function() {
     table : null;
 
     return {createTable: function() {
-            // TODO
+          var tbl = document.createElement("TABLE");
+
+          for (i = 0; i < rows; i++) {
+            var row = tbl.insertRow(i);
+            for (j = 0; j < cols; j++) {
+              var cell = row.insertCell(j);
+              cell.innerHTML = data[j + cols*i];
+            }
+          }
+
+          return tbl;
         }, editTable: function() {
             // TODO
         }}

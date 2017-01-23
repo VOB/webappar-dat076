@@ -7,23 +7,22 @@
 // The function to implement
 function createTable(rows, cols, data) {
 
-  var tbl = $("table");
+  var tbl = document.createElement("TABLE");
 
-  /*for (i = 0; i < rows; i++) {
-    tbl.append($("<tr>"))
+  for (i = 0; i < rows; i++) {
+    var row = tbl.insertRow(i);
     for (j = 0; j < cols; j++) {
-      var cell = $("<td>" + data[i][j] + "</td>")
-      tbl.append(cell);
+      var cell = row.insertCell(j);
+      cell.innerHTML = data[j + cols*i];
     }
-    tbl.append($("</tr"))
   }
-  tbl.append($("</table>"));
-  */
+
+  document.getElementById("test").innerHTML = "Create table körs"
   return tbl;
 }
 
 $(document).ready(function() {
-  document.getElementById("test").innerHTML = "HAI"
+  document.getElementById("test").innerHTML = "Document ready körs"
   //test.innerHTML = "This page should display a table created using pure JS/DOM API";
 
   // Executed at download

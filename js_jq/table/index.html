@@ -6,6 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <title>Table</title>
 </head>
 
@@ -14,9 +15,9 @@
     <p id="test">This page should display a table created using pure JS/DOM API!!</p>
 
     <!-- This is where the table should hook to the DOM -->
-    <div id="parent"></div>
+    <div id="parent"><p>mm</p></div>
     <script>
-      document.getElementById("test").innerHTML = "HEJ";
+        document.getElementById("test").innerHTML = "HEJ";
     </script>
     <!-- This is pure js, put scripts last so that DOM is constructed -->
     <script type="text/javascript" src="table.js"></script>
