@@ -3,29 +3,32 @@
     <head>
         <title>The CV</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
-        <link rel="stylesheet" href="default.css">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" crossorigin="anonymous">
+        <!-- integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" 
+        <link rel="stylesheet" href="default.css">-->
     </head>
     <body>
         <a href="letter.html">Go to letter</a>
         <h2>Curriculum Vitae</h2>
-        <div>
-            <ul>
-                <li>Name: Jonas</li>
-                <li>Phone: Yes</li>
-                <li>Mail: No</li>
-            </ul>
+        <div class="pure-g">
+            <div class="pure-u-1-2">
+                <h3>Basic info</h3>
+                <ul>
+                    <li>Name: Jonas
+                    <li>Phone: Yes
+                    <li>Mail: No
+                </ul>
+                <h3>Previous work</h3>
+                <ul>
+                    <li>Swimmer at Swim Co.</li>
+                    <li>Leaf eater at Big Brother Co. Oversaw leaf eating in the 
+                    tortoise population, making sure nobody went out of line.</li>
+                </ul>
+            </div>
+            <div class="pure-u-1-2">
+                <img src="img/me.jpg" width="490" alt="This is me"/>
+            </div>
         </div>
-        <div id="image">
-            <img src="img/me.jpg" alt="This is me"/>
-        </div>
-        <div>
-            <h3>Previous work</h3>
-            <ul>
-                <li>Swimmer at Swim Co.</li>
-                <li>Leaf eater at Big Brother Co. Oversaw leaf eating in the 
-                tortoise population, making sure nobody went out of line.</li>
-            </ul>
-        </div>
+        
     </body>
 </html>
