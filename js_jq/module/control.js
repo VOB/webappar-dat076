@@ -33,7 +33,6 @@ var control = (function() {
           var tbl = table.render();
           var parent = document.getElementById("parent");
           parent.innerHTML = "";
-          //tbl.addClass("striped");
           parent.appendChild(tbl);
 
         }, editTable: function() {

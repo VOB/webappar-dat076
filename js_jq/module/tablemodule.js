@@ -27,8 +27,8 @@ Table.prototype = (function() {
         render: function() {
             // TODO Reuse code!
             var tbl = document.createElement("TABLE");
-            if(this.striped) {
-              $("tbl").addClass("striped");
+            if (this.striped) {
+              tbl.className = "striped";
             }
             for (i = 0; i < this.rows; i++) {
               var row = tbl.insertRow(i);

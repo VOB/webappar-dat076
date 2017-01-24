@@ -1,7 +1,11 @@
-striped.table tr:nth-child(even) {
+table.striped tr:nth-child(even) {
   background-color: cyan;
 }
 
-striped.table tr:nth-child(odd) {
+table.striped tr:nth-child(odd) {
   background-color: orange;
+}
+
+.hej {
+  background-color: blue;
 }
