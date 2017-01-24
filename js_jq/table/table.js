@@ -16,14 +16,10 @@ function createTable(rows, cols, data) {
       cell.innerHTML = data[j + cols*i];
     }
   }
-
-  document.getElementById("test").innerHTML = "Create table körs"
   return tbl;
 }
 
 $(document).ready(function() {
-  document.getElementById("test").innerHTML = "Document ready körs"
-  //test.innerHTML = "This page should display a table created using pure JS/DOM API";
 
   // Executed at download
   var parent = document.getElementById("parent");

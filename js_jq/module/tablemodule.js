@@ -26,6 +26,17 @@ Table.prototype = (function() {
         // Must call this after new Table() to make table visible
         render: function() {
             // TODO Reuse code!
+            var tbl = document.createElement("TABLE");
+            if(this.striped) {
+              $("tbl").addClass("striped");
+            }
+            for (i = 0; i < this.rows; i++) {
+              var row = tbl.insertRow(i);
+              for (j = 0; j < this.cols; j++) {
+                var cell = row.insertCell(j);
+                cell.innerHTML = this.data[j + this.cols*i];
+              }
+            }
             return tbl;
         },
 

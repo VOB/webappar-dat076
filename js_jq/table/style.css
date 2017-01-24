@@ -1,0 +1,7 @@
+striped.tr:nth-child(even) {
+  background-color: cyan;
+}
+
+striped.tr:nth-child(odd) {
+  background-color: orange;
+}

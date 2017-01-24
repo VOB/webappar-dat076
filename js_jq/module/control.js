@@ -7,7 +7,8 @@
 $(function() {
 
     // Connecting eventhandlers to elements, jQuery style
-
+    $("#create").on("click", control.createTable);
+    $("#edit").on("click", control.editTable);
     // TODO
 
 });
@@ -23,16 +24,18 @@ var control = (function() {
 
     table : null;
 
-    return {createTable: function(rows, cols, data) {
-          var tbl = document.createElement("TABLE");
-          for (i = 0; i < rows; i++) {
-            var row = tbl.insertRow(i);
-            for (j = 0; j < cols; j++) {
-              var cell = row.insertCell(j);
-              cell.innerHTML = data[j + cols*i];
-            }
-          }
-          return tbl;
+    return {createTable: function() {
+          table = new Table($("#rows").val(),
+                            $("#cols").val(),
+                            data.split(' '),
+                            $("#striped").is(":checked"));
+
+          var tbl = table.render();
+          var parent = document.getElementById("parent");
+          parent.innerHTML = "";
+          //tbl.addClass("striped");
+          parent.appendChild(tbl);
+
         }, editTable: function() {
             // TODO
         }}
