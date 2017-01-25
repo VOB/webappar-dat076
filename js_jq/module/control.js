@@ -36,6 +36,13 @@ var control = (function() {
           parent.appendChild(tbl);
 
         }, editTable: function() {
-            // TODO
+            var r = $("#row").val();
+            var c = $("#col").val();
+            var v = $("#value").val();
+
+            var tbl = document.getElementById("tbl").firstChild;
+            var row = tbl.childNodes[r];
+            var cell = row.childNodes[c];
+            cell.innerHTML = v;
         }}
 })();

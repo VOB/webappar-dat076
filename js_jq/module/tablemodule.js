@@ -27,6 +27,7 @@ Table.prototype = (function() {
         render: function() {
             // TODO Reuse code!
             var tbl = document.createElement("TABLE");
+            tbl.id = "tbl";
             if (this.striped) {
               tbl.className = "striped";
             }
