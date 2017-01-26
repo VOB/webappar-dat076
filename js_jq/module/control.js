@@ -40,6 +40,8 @@ var control = (function() {
             var c = $("#col").val();
             var v = $("#value").val();
 
+            table.edit(r,c,v);
+
             var tbl = document.getElementById("tbl").firstChild;
             var row = tbl.childNodes[r];
             var cell = row.childNodes[c];

@@ -42,7 +42,7 @@ Table.prototype = (function() {
         },
 
         edit: function(row, col, value) {
-            // TODO
+            this.data[col + this.cols * row] = value;
         }
     };
 
