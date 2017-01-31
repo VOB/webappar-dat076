@@ -19,7 +19,7 @@
                 </tr>
             </thead>
             <tbody>
-                <c:forEach var= "note" items="${bean.notes}" >
+                <c:forEach var="note" items="${bean.notes}" >
                     <tr>
                         <td>${note.id}</td>
                         <td>${note.text}</td>
