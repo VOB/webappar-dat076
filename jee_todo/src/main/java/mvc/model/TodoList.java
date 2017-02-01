@@ -17,7 +17,6 @@ import java.util.Objects;
 public class TodoList {
 
     private final List<TodoNote> notes = new ArrayList<>();
-
     public TodoList() {
         // Test data
         notes.add(new TodoNote(1L, "Äta gröt"));

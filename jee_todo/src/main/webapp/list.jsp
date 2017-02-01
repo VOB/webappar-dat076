@@ -19,9 +19,15 @@
                     </tr>
                 </thead>
                 <tbody>
-                    
-                    <!-- TODO create a table -->
-                  
+                    <c:forEach items="${bean.getList()}" var="entry">
+                        <tr>
+                            <td>${entry.id}</td>
+                            <td>${entry.text}</td>
+                            <td>${entry.dateTime}</td>
+                            <td>${entry.done}</td>
+                            <td><a href="delete.jsp?id=${entry.id}">delete</a></td>
+                        </tr>
+                    </c:forEach>
                 </tbody>
             </table>
         </div>
