@@ -1,6 +1,8 @@
 package orm.dao;
 
 import com.querydsl.jpa.impl.JPAQueryFactory;
+import java.util.ArrayList;
+import java.util.List;
 import orm.model.TodoNote;
 import javax.persistence.EntityManagerFactory;
 import orm.db.AbstractDAO;
@@ -14,6 +16,10 @@ public class TodoNoteDAO extends AbstractDAO<TodoNote, Long> {
 
     public TodoNoteDAO(EntityManagerFactory emf) {
         super(emf, TodoNote.class);
+    }
+    
+    public List<TodoNote> get() {
+        return new ArrayList();
     }
  
      

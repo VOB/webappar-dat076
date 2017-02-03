@@ -19,20 +19,23 @@ import javax.persistence.Id;
 
 
 // TODO Make this an Entity class
-//@Entity
+@Entity
 public class TodoNote implements Serializable {
 
     private static final long serialVersionUID = 1L;
    
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    @Column(name = "id", nullable = false, unique = true)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false, unique = true)
     private Long id;
-//    @Column(name = "text")
+    
+    @Column(name = "text")
     private String text;
-//    @Column(name = "datetime")
+    
+    @Column(name = "datetime")
     private Date dateTime;
-//    @Column(name = "done")
+    
+    @Column(name = "done")
     private boolean done;
 
     // MUST have
