@@ -1,0 +1,10 @@
+** JEE REST Backend ***
+
+Run on TomEE 1.7.4 Microprofile
+
+This uses
+- JAX-RS the API for REST
+- CDI the JEE API for dependency injection
+(very basic usage, just the @Singleton annotation TodoList)
+
+

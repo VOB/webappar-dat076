@@ -1,0 +1,26 @@
+
+Testing using cUrl
+------------------
+
+# Get all notes 
+curl -v -H "Accept: application/json" http://localhost:8080/todo/rest/list 
+
+# Get single note
+curl -v -H "Accept: application/json" http://localhost:8080/todo/rest/list/1
+
+# Get primitive type (number of notes)
+curl -v -H "Accept: application/json" http://localhost:8080/todo/rest/list/count
+
+# Create new note
+curl -v -X POST  http://localhost:8080/todo/rest/list --data "text=bla bla bla"
+
+# Update a note
+curl -v -X PUT http://localhost:8080/todo/rest/list/1 --data "text=updated&done=true"
+
+# Delete a note
+curl -v -X DELETE http://localhost:8080/todo/rest/list/1 
+
+# Options (used by CORS preflight)
+curl -v -X OPTIONS http://localhost:8080/todo/rest/list
+
+
