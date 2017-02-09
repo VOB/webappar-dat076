@@ -3,7 +3,7 @@ Testing using cUrl
 ------------------
 
 # Get all notes 
-curl -v -H "Accept: application/json" http://localhost:8080/todo/rest/list 
+curl -v -H "Accept: application/json" http://localhost:8084/todo/rest/list 
 
 # Get single note
 curl -v -H "Accept: application/json" http://localhost:8080/todo/rest/list/1
