@@ -19,26 +19,34 @@ router.use("/list", list);
 
 router.get('/', function(req, res, next) {
     // TODO
-    //res.render('todo', {text: 'Your TODO list on the Web'});
+    res.render('todo', {text: 'Your TODO list on the Web'});
 });
 
 router.get('/login', function(req, res, next) {
-    // TODO
-
+    res.render('login', {});
 });
 
 router.get('/register', function(req, res, next) {
-    // TODO
-
+    res.render('register', {});
 });
 
 router.get('/logout', function(req, res, next) {
-    // TODO
+    console.log('logout')
+    req.session.destroy();
+    res.render('todo', {text: 'logged out'});
 });
 
 router.post('/login', function(req, res, next) {
-    // TODO
-
+    console.log('login')
+    var u = User.lookup(req.body)
+    if (u && u.password === req.body.password) {
+      req.session.user = u.name;
+      delete req.session.loginMessage;
+      res.redirect("/todo")
+    } else {
+      req.session.loginMessage = "login failed"
+      res.redirect("/list")
+    }
 });
 
 router.post('/register', function(req, res, next) {
