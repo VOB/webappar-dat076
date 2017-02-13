@@ -55,7 +55,7 @@ public class TodoCtrl implements Serializable {
    
     public String update() {
         log("Update: " + note);
-        list.update(new TodoNote(note.getText()));
+        list.update(new TodoNote(note.getId(), note.getText()));
         return "list?faces-redirect=true"; 
     }
 
