@@ -17,7 +17,10 @@ var router = express.Router();
 
 // List notes for current user
 router.get('/', function(req, res, next) {
-    // TODO
+    res.render('list', {
+      title: 'List',
+      todoList: TodoList.getNotes()
+    });
 
 });
 
