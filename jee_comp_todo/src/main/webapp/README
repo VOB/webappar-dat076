@@ -1,0 +1,11 @@
+** JEE_COMP_TODO ***
+
+
+Need GlassFish > 4.1 (but avoid 4.1.1) due to bug in Mojarra
+(name spaces and view parameters does not work)
+
+Issues
+------
+Seems to be some issue when using HTTPMonitor(?)
+Will get network exception. Doesn't affect the application 
+

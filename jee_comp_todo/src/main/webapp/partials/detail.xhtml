@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    
+    <f:metadata>
+        <f:viewParam name="id" value="#{notedetail.id}"  />
+        <f:viewParam name="fname" value="#{notedetail.text}"  />
+        <f:viewParam name="age" value="#{notedetail.dateTime}" />
+        <f:viewParam name="done" value="#{notedetail.done}" />
+    </f:metadata>
+    
+
+    <h:head>
+        <title>Detail</title>
+    </h:head>   
+
+    <h:body>
+
+        <ui:composition template="/WEB-INF/template.xhtml">
+
+            <ui:define name="top">
+                <h2>Detail</h2>
+                <h:link outcome="list">List</h:link>
+            </ui:define>
+
+            <ui:define name="content">
+                <h:form>
+                    <!-- TODO add table with input output and buttons -->
+                </h:form>
+            </ui:define>
+
+            <ui:define name="bottom">
+
+            </ui:define>
+        </ui:composition>
+
+ 
+    </h:body>
+</html>
