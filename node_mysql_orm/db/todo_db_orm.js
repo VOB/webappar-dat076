@@ -7,10 +7,8 @@
 
 var Sequelize = require('sequelize');
 
-// TODO adapt to your needs
-
 // Sequelize('database', 'username', 'password', {
-var sq = new Sequelize('todo', 'hajo', 'hajo', {
+var sq = new Sequelize('todo', 'root', '', {
     host: 'localhost',
     dialect: 'mysql', //|'sqlite'|'postgres'|'mssql',
     pool: {
@@ -22,5 +20,7 @@ var sq = new Sequelize('todo', 'hajo', 'hajo', {
     // SQLite only
     //storage: 'path/to/database.sqlite'
 });
+
+sq.sync();
 
 module.exports = sq;

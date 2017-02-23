@@ -4,8 +4,16 @@ var sequelize = require('../db/todo_db_orm.js');
 // Create mapping between table and
 // model for a TodoNote
 
-var TodoNote = null;
+var TodoNote = sequelize.define('Todo', {
+  id: {
+      type: Sequelize.BIGINT,
+      autoIncrement: true,
+      primaryKey: true
+  },
+  text: {
+      type: Sequelize.STRING
+  }
+});
 
-// TODO
 
 module.exports = TodoNote;

@@ -1,9 +1,5 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node',
-1 verbose cli   '/usr/local/bin/npm',
-1 verbose cli   'install',
-1 verbose cli   'express',
-1 verbose cli   '-save' ]
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
 2 info using npm@4.0.5
 3 info using node@v7.4.0
 4 silly loadCurrentTree Starting
@@ -25,7 +21,7 @@
 11 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:413:12)
 12 verbose cwd /home/gmop/kod/web/kurs/webappar-dat076/node_mysql_orm
 13 error Linux 4.4.0-59-generic
-14 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "express" "-save"
+14 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
 15 error node v7.4.0
 16 error npm  v4.0.5
 17 error file /home/gmop/kod/web/kurs/webappar-dat076/node_mysql_orm/package.json
