@@ -20,8 +20,18 @@
 
             <ui:define name="content">
                 <h:form>
-                    <!-- TODO add table with input output and buttons -->
-                    
+                    <h:panelGrid columns="2" class="table">
+                        <h:outputLabel value="Id"/>
+                        <h:outputLabel value="Generated" /> 
+                        <h:outputLabel value="Text"/>
+                        <h:inputText id="text" value="#{notedetail.text}"/>  
+                        <h:message for="text" showSummary="true" showDetail="false" style="color: red" />
+                    </h:panelGrid>
+                    <div class="btn-group">
+                        <h:commandButton value="Cancel" immediate="true" class="btn-sm"
+                                         action="list"  />
+                        <h:commandButton value="Save" action="#{notectrl.save()}" class="btn-sm"/>
+                    </div>
                 </h:form>
             </ui:define>
 

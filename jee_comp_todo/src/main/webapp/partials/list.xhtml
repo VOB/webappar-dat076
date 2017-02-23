@@ -31,6 +31,25 @@
 
                     <h:panelGroup id="notesPanel" >
                         <!-- TODO add data table (dynamic list) -->
+                        <h:panelGroup id="personsPanel" >
+                            <h:outputText value="Page: #{noteslist.currentPage}" />
+                            <h:dataTable var="n" value="#{noteslist.list}" 
+                                     class="table table-striped">
+                            <h:column><h:outputText value="#{n.id}"/></h:column>
+                            <h:column><h:outputText value="#{n.text}"/></h:column>
+                            
+
+                            <h:column>
+                                <h:link value="Details" outcome="detail">
+                                    <f:param name="id" value="#{n.id}" />
+                                    <f:param name="text" value="#{n.text}" />
+                                    <f:param name="dateTime" value="#{n.dateTime}" />
+                                    <f:param name="done" value="#{n.done}" />
+                                </h:link>
+                            </h:column>
+                        </h:dataTable>
+                    </h:panelGroup>
+                        
                     </h:panelGroup>
                 </h:form>
             </ui:define>

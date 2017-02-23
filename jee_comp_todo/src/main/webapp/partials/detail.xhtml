@@ -28,7 +28,20 @@
 
             <ui:define name="content">
                 <h:form>
-                    <!-- TODO add table with input output and buttons -->
+                    <h:panelGrid columns="2" class="table">
+                        <h:outputLabel value="Id"/>
+                        <h:outputText value="#{notedetail.id}"/> 
+                        <h:outputLabel value="Text" />
+                        <h:outputText value="#{notedetail.getText()}"/>  
+                        <h:outputLabel value="date" />
+                        <h:outputText value="#{notedetail.dateTime}"/>
+                    </h:panelGrid>
+                    <h:panelGroup class="btn-group" >
+                        <h:commandButton value="Cancel" immediate="true" class="btn-sm"
+                                         action="list" />
+                        <h:commandButton value="Delete"
+                                         action="#{notectrl.delete}" class="btn-sm"/>
+                    </h:panelGroup>
                 </h:form>
             </ui:define>
 

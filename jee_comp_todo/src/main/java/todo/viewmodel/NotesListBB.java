@@ -1,4 +1,4 @@
-package todo.viewmodel;
+apckage todo.viewmodel;
 
 import todo.core.TodoNote;
 import todo.core.TodoList;
