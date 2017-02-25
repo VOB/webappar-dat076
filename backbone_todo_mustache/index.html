@@ -1,0 +1,44 @@
+<!--
+
+	Single page application
+
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Backbone.js + RequireJS • TodoMVC</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div id="todoapp">
+		<header id="header">
+			<h1>Your TODO's (using local storage)</h1>
+			<p>
+				<label>Add a note (+enter)</label>
+				<input id="newNote" placeholder="What needs to be done?" autofocus>
+			</p>
+		</header>
+		<div id="main">
+			<p>Click field to edit</p>
+			<table id="todoNoteTable">
+				<thead></thead>
+				<tbody></tbody>
+				<tfoot>
+				</tfoot>
+			</table>
+		</div>
+		<footer id="footer"></footer>
+	</div>
+	<footer id="info">
+		<!--<p>Written by <a href="https://github.com/tastejs/todomvc">TasteJS</a></p>
+		<p>Part of <a href="http://todomvc.com">TodoMVC</a></p>-->
+	</footer>
+	<!--<script src="node_modules/requirejs/require.js"></script>-->
+	<script src="node_modules/requirejs/require.js"></script>
+	<script src="app.js"></script>
+</body>
+
+</html>

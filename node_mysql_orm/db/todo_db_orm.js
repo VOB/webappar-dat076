@@ -8,7 +8,7 @@
 var Sequelize = require('sequelize');
 
 // Sequelize('database', 'username', 'password', {
-var sq = new Sequelize('todo', 'root', '', {
+var sq = new Sequelize('todo', 'root', 'admin', {
     host: 'localhost',
     dialect: 'mysql', //|'sqlite'|'postgres'|'mssql',
     pool: {
