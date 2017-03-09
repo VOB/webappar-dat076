@@ -7,6 +7,18 @@
 /*global require*/
 'use strict';
 
+var allowCrossDomain = function(req, res, next) {
+  if(allowedHost[req.headers.origin]) {
+    res.header('Access-Control-Allow-Credentials', true);
+    res.header('Access-Control-Allow-Origin', req.headers.origin)
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
+    res.header('Access-Control-Allow-Headers', 'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version');
+    next();
+  } else {
+    res.send(403, {auth: false});
+  }
+}
+
 // Require.js allows us to configure shortcut alias
 require.config({
     // The shim config allows us to configure dependencies for

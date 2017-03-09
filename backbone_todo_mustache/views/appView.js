@@ -4,7 +4,7 @@
     Adding notes belong to this (and index.html)
 */
 define([
-    'jquery', 'underscore', 'backbone', 'views/todoNoteView'
+    'jquery', 'underscore', 'backbone', 'views/todoNoteView', 'models/todoNote'
 ], function($, _, Backbone, TodoNoteView) {
     'use strict';
 

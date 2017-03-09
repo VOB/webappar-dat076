@@ -31,7 +31,7 @@ define([
         //     text: "empty",
         //     done: false
         // },
-        urlRoot: 'http://localhost:4848/todo/list',
+        urlRoot: 'http://localhost:3000/todo/list',
 
         idAttribute: "id"
         // initialize: function(id, text) {

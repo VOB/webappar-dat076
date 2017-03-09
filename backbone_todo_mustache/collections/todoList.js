@@ -31,7 +31,7 @@ define([
         // i.e. must use and URL when saving notes
         // localStorage: new Store('todos-backbone'),
 
-        url: 'http://localhost:4848/todo/list',
+        url: 'http://localhost:3000/todo/list',
         // This is the server side id (cid created clientside automatically by Backbone)
         modelId: function(attributes) {
             return attributes.id;
