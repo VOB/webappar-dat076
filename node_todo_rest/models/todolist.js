@@ -1,4 +1,4 @@
-/*
+﻿/*
 	Todolist model object
 
   *** NOTHING TO DO HERE
@@ -7,9 +7,9 @@ var TodoNote = require('./todonote.js');
 
 function TodoList() {
     this.notes = [
-        // new TodoNote(1, 'Äta katt', "", null),
-        new TodoNote(1, 'Rensa sallad', "", null),
-        new TodoNote(2, 'Jaga älg', "", null)
+        new TodoNote(1, 'Äta katt', "", null),
+        new TodoNote(2, 'Rensa sallad', "", null),
+        new TodoNote(3, 'Jaga älg', "", null)
     ];
 };
 
